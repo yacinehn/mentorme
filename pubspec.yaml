@@ -1,0 +1,26 @@
+name: mentorme
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  cloud_firestore: ^4.9.1 
+  firebase_auth: ^4.19.5
+  firebase_core: ^2.31.0
+  firebase_database: ^10.4.0
+  google_nav_bar: ^5.0.6
+  provider: ^6.1.2
+  flutter:
+    sdk: flutter
+  firebase_ui_auth: ^1.14.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
