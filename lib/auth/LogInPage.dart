@@ -99,9 +99,9 @@ class _LoginPgeState extends State<LoginPage> {
             const SizedBox(height: 20.0),
 
             _isLoading
-                ? CircularProgressIndicator(
+                ? const CircularProgressIndicator(
                     valueColor: AlwaysStoppedAnimation<Color>(
-                      const Color.fromRGBO(84, 255, 127, 1), // Green color
+                      Color.fromRGBO(84, 255, 127, 1), // Green color
                     ),
                   )
                 : ElevatedButton(
@@ -109,7 +109,6 @@ class _LoginPgeState extends State<LoginPage> {
                       setState(() {
                         _isLoading = true;
                       });
-
                       try {
                         await Provider.of<AuthState>(context, listen: false)
                             .signIn(_emailController.text,

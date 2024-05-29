@@ -8,8 +8,6 @@ import 'package:mentorme/auth/LogInPage.dart';
 import 'package:mentorme/firebase_options.dart';
 import 'package:mentorme/widgets.dart';
 
-final FirebaseAuth auth = FirebaseAuth.instance;
-
 class AuthState extends ChangeNotifier {
   bool _loggedIn = false;
   bool? _isStudent;

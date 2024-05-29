@@ -139,9 +139,7 @@ class _SignUpPage extends State<SignUpPage> {
               child: TextField(
                 readOnly: true, // Disable manual text input
                 decoration: InputDecoration(
-                  hintText: _selectedGender != null
-                      ? _selectedGender
-                      : 'Select Gender',
+                  hintText: _selectedGender ?? 'Select Gender',
                   hintStyle: TextStyle(
                     color:
                         Colors.grey.withOpacity(0.3), // Optional for faint hint
@@ -166,8 +164,7 @@ class _SignUpPage extends State<SignUpPage> {
               child: TextField(
                 readOnly: true,
                 decoration: InputDecoration(
-                  hintText:
-                      _selectedRole != null ? _selectedRole : 'Select role',
+                  hintText: _selectedRole ?? 'Select role',
                   hintStyle: TextStyle(
                     color: Colors.grey.withOpacity(0.3),
                   ),
@@ -202,7 +199,6 @@ class _SignUpPage extends State<SignUpPage> {
                 }
                 Map<String, String> userData = {
                   'firstName': firstNameController.text,
-                  'lastName': lastNameController.text,
                   'gender': _selectedGender!,
                   'role': _selectedRole!,
                 };
